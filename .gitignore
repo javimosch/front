@@ -1,0 +1,10 @@
+/node_modules
+/dist
+*credentials*
+*temp*
+.env
+*.env*
+*-error*
+*.log
+/src/articles
+*cache*

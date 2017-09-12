@@ -1,0 +1,1 @@
+const Quill = require('quill');
