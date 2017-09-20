@@ -1,11 +1,12 @@
 {
   "name": "Front",
   "version": "0.0.1",
-  "author":"arancibiajav@gmail.com"
+  "author": "arancibiajav@gmail.com",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "./node_modules/.bin/nodemon index.js --watch src --watch index.js --watch tools -e js,css,scss,jsx,html,ts --ignore src/articles"
+    "start": "node index.js",
+    "watch": "./node_modules/.bin/nodemon index.js --watch src --watch index.js --watch tools -e js,css,scss,jsx,html,ts --ignore src/articles"
   },
   "devDependencies": {
     "debug": "^3.0.1",
@@ -27,5 +28,11 @@
     "serve": "^6.0.6",
     "shelljs": "^0.7.8",
     "showdown": "^1.7.4"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "mongo-express": "^0.42.2",
+    "mongoose": "^4.11.12",
+    "require-from-string": "^2.0.1"
   }
 }
