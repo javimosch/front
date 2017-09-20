@@ -31,6 +31,7 @@
   },
   "dependencies": {
     "jquery": "^3.2.1",
+    "moment": "^2.18.1",
     "mongo-express": "^0.42.2",
     "mongoose": "^4.11.12",
     "require-from-string": "^2.0.1"
