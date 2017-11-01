@@ -6,7 +6,12 @@ require('dotenv').config({
 const debug = require('debug')('index.js');
 const cache = require('./tools/local-cache');
 debug("STATE", cache.state());
-require('./tools/compile-articles').run();
+//require('./tools/compile-articles').run();
 require('./tools/sass').run();
-require('./tools/dev-server').run();
-require('./tools/fuse').run();
+if (process.env.PROD === '1') {
+    require('./tools/prod-server').run();
+}
+else {
+    require('./tools/dev-server').run();
+}
+//require('./tools/fuse').run();
